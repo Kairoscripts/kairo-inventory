@@ -1,0 +1,53 @@
+{
+  "name": "hmp-inventory",
+  "version": "0.11.1",
+  "author": "Kairo",
+  "description": "Borsa da viaggio e azioni inventario di Kairo per ArcaneMP.",
+  "mafiahub": {
+    "sharedScripts": [
+      "config.js",
+      "languages/it.js",
+      "languages/en.js",
+      "languages/resolve.js"
+    ],
+    "serverScripts": [
+      "server/storage.js",
+      "server/adapter.js",
+      "server/main.js"
+    ],
+    "clientScripts": [
+      "client/main.js"
+    ],
+    "files": [
+      "ui/**",
+      "languages/it.js",
+      "dist/icons/**"
+    ],
+    "resourceDependencies": [
+      {
+        "name": "hmp-mysql",
+        "version": "0.11.1"
+      },
+      {
+        "name": "hmp-core",
+        "version": "0.11.1"
+      },
+      {
+        "name": "hmp-lib",
+        "version": "0.11.1"
+      }
+    ],
+    "errorBehavior": "stop",
+    "exports": [
+      "items",
+      "inventory",
+      "containers",
+      "transfers",
+      "native",
+      "ui",
+      "status"
+    ],
+    "priority": -725
+  },
+  "license": "SEE LICENSE IN LICENSE-Foundations"
+}
